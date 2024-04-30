@@ -12,6 +12,7 @@ public class CheckDigit
      for (int i = 1; i<=getNumberOfDigits(num);i++){
        product += (8-i) * getDigit(num,i);
      }
+     return product %10;
    }
  
   /** Returns true if numWithCheckDigit is valid, or false    
